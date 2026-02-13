@@ -6,25 +6,28 @@ function Home() {
 
   return (
     <div className="home-container">
-      <h1 className="home-title">Hostel Food Management System</h1>
-      <p className="home-subtitle">
-        Select your role to continue
-      </p>
+      <div className="content-wrapper">
+        <h1 className="home-title">Hostel Food Management System</h1>
 
-      <div className="role-buttons">
-        <button
-          className="role-btn student-btn"
-          onClick={() => navigate("/login?role=student")}
-        >
-          Student
-        </button>
+        <p className="home-subtitle">
+          Select your role to continue
+        </p>
 
-        <button
-          className="role-btn warden-btn"
-          onClick={() => navigate("/login?role=warden")}
-        >
-          Warden
-        </button>
+        <div className="role-buttons">
+          <button
+            className="role-btn student-btn"
+            onClick={() => navigate("/login?role=student")}
+          >
+            Student
+          </button>
+
+          <button
+            className="role-btn warden-btn"
+            onClick={() => navigate("/login?role=warden")}
+          >
+            Warden
+          </button>
+        </div>
       </div>
     </div>
   );

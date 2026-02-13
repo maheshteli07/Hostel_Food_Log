@@ -1,57 +1,102 @@
-/* Full page layout */
+/* ========== PAGE CONTAINER ========== */
 .home-container {
   min-height: 100vh;
-  background-color: var(--background);
+  width: 100%;
+  background-color: #f5f9ff; /* Light govt white-blue */
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* ========== MAIN CONTENT (COLUMN LAYOUT) ========== */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+
+  /* subtle animation */
+  animation: fadeIn 0.6s ease-in-out;
 }
 
-/* Main heading */
+/* ========== TITLE ========== */
 .home-title {
-  font-size: 2.4rem;
-  color: var(--primary);
-  margin-bottom: 10px;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #0f2a44; /* Govt dark blue */
 }
 
-/* Subtitle text */
+/* ========== SUBTITLE ========== */
 .home-subtitle {
   font-size: 1rem;
-  color: var(--text);
-  margin-bottom: 30px;
+  color: #334155;
 }
 
-/* Button wrapper */
+/* ========== ROLE BUTTONS (COLUMN) ========== */
 .role-buttons {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
 }
 
-/* Common button styling */
+/* ========== BUTTON COMMON ========== */
 .role-btn {
-  padding: 12px 30px;
+  width: 100%;
+  padding: 14px;
   font-size: 1rem;
-  border: none;
+  font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
-  color: white;
-  transition: all 0.2s ease-in-out;
+  background-color: #ffffff;
+  color: #0f2a44;
+  border: 2px solid #0f2a44;
+  transition: all 0.25s ease;
 }
 
-/* Student button */
+/* Student Button */
 .student-btn {
-  background-color: rgb(48, 162, 190);
+  border-color: #0f2a44;
 }
 
-/* Warden button */
+/* Warden Button */
 .warden-btn {
-  background-color: rgb(48, 162, 190);
+  border-color: #1e40af;
 }
 
-/* Hover effect */
+/* Hover Effect (simple govt style) */
 .role-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  background-color: #0f2a44;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* ========== SIMPLE ANIMATION ========== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== MOBILE RESPONSIVE ========== */
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .content-wrapper {
+    padding: 2rem 1.5rem;
+  }
 }

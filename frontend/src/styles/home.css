@@ -1,0 +1,57 @@
+/* Full page layout */
+.home-container {
+  min-height: 100vh;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Main heading */
+.home-title {
+  font-size: 2.4rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+/* Subtitle text */
+.home-subtitle {
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 30px;
+}
+
+/* Button wrapper */
+.role-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Common button styling */
+.role-btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Student button */
+.student-btn {
+  background-color: rgb(48, 162, 190);
+}
+
+/* Warden button */
+.warden-btn {
+  background-color: rgb(48, 162, 190);
+}
+
+/* Hover effect */
+.role-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}

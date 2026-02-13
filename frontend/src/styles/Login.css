@@ -5,11 +5,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px; /* ✅ Added for small screens */
 }
 
 /* Form Container */
 .login-container {
   width: 380px;
+  max-width: 100%;   /* ✅ Important */
   background-color: #ffffff;
   padding: 30px;
   border: 1px solid #ccc;
@@ -32,7 +34,7 @@
   border: 1px solid #999;
   border-radius: 4px;
   font-size: 14px;
-  box-sizing: border-box;   /* ✅ Important */
+  box-sizing: border-box;
 }
 
 /* Button */
@@ -46,9 +48,26 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 15px;
-  box-sizing: border-box;   /* ✅ Important */
+  box-sizing: border-box;
 }
 
 .login-container button:hover {
   background-color: #004080;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 480px) {
+  .login-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .login-container h2 {
+    font-size: 20px;
+  }
+
+  .login-container input,
+  .login-container button {
+    font-size: 14px;
+  }
 }

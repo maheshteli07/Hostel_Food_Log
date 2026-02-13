@@ -5,11 +5,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px; /* ✅ Added */
 }
 
 /* Form Container */
 .register-container {
   width: 420px;
+  max-width: 100%;   /* ✅ Important */
   background-color: #ffffff;
   padding: 30px;
   border: 1px solid #ccc;
@@ -32,7 +34,7 @@
   border: 1px solid #999;
   border-radius: 4px;
   font-size: 14px;
-  box-sizing: border-box;   /* ✅ Important */
+  box-sizing: border-box;
 }
 
 /* Button */
@@ -46,9 +48,26 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 15px;
-  box-sizing: border-box;   /* ✅ Important */
+  box-sizing: border-box;
 }
 
 .register-container button:hover {
   background-color: #0055aa;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 480px) {
+  .register-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .register-container h2 {
+    font-size: 20px;
+  }
+
+  .register-container input,
+  .register-container button {
+    font-size: 14px;
+  }
 }

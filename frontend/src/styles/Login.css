@@ -5,54 +5,81 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px; /* ✅ Added for small screens */
+  padding: 15px;
 }
 
 /* Form Container */
 .login-container {
   width: 380px;
-  max-width: 100%;   /* ✅ Important */
+  max-width: 100%;
   background-color: #ffffff;
   padding: 30px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 /* Heading */
 .login-container h2 {
   text-align: center;
   color: #003366;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-size: 22px;
 }
 
 /* Input Fields */
 .login-container input {
   width: 100%;
-  padding: 10px;
-  margin: 8px 0;
-  border: 1px solid #999;
-  border-radius: 4px;
+  padding: 11px;
+  margin: 10px 0;
+  border: 1px solid #bbb;
+  border-radius: 5px;
   font-size: 14px;
   box-sizing: border-box;
+  transition: border 0.2s ease;
+}
+
+/* Input Focus Effect */
+.login-container input:focus {
+  outline: none;
+  border: 1px solid #003366;
 }
 
 /* Button */
 .login-container button {
   width: 100%;
-  padding: 10px;
-  margin-top: 10px;
+  padding: 11px;
+  margin-top: 12px;
   background-color: #003366;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 15px;
+  font-weight: 500;
   box-sizing: border-box;
+  transition: background-color 0.2s ease;
 }
 
 .login-container button:hover {
-  background-color: #004080;
+  background-color: #0055aa;
+}
+
+/* Register Text */
+.register-text {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.register-text a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
 }
 
 /* 📱 Mobile Responsive */
@@ -60,6 +87,7 @@
   .login-container {
     width: 95%;
     padding: 20px;
+    border-radius: 6px;
   }
 
   .login-container h2 {

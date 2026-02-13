@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Background from "../components/background";
 import "../styles/warden_dashboard.css";
 
 function WardenDashboard() {
@@ -27,6 +28,7 @@ function WardenDashboard() {
   };
 
   return (
+    <Background>
     <div className="warden-container">
       <h1 className="warden-title">Warden Dashboard</h1>
 
@@ -88,6 +90,7 @@ function WardenDashboard() {
         </div>
       </div>
     </div>
+    </Background>
   );
 }
 

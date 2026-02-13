@@ -1,7 +1,6 @@
 /* ========== PAGE ========== */
 .warden-container {
   min-height: 100vh;
-  background: linear-gradient(180deg, #f1f5fb 0%, #ffffff 100%);
   padding: 2rem;
   animation: pageFade 0.4s ease-in-out;
 }
@@ -181,14 +180,79 @@
   color: #1e3a8a;
 }
 
-/* ========== MOBILE ========== */
-@media (max-width: 600px) {
+/* ================================================= */
+/* ========== MOBILE RESPONSIVE (SAFE) ========== */
+/* ================================================= */
+
+/* Phones */
+@media (max-width: 480px) {
+
+  .warden-container {
+    padding: 1rem;
+  }
+
+  .warden-title {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    padding: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .request-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .action-buttons {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .approve-btn,
+  .delete-btn {
+    width: 48%;
+    padding: 10px;
+  }
+
   .count-box {
     flex-direction: column;
-    align-items: center;
   }
 
   .count-item {
     width: 100%;
+  }
+
+  .count-number {
+    font-size: 1.6rem;
+  }
+}
+
+/* Large phones */
+@media (max-width: 600px) {
+
+  .warden-title {
+    font-size: 1.8rem;
+  }
+
+  .request-row {
+    padding: 0.8rem 0;
+  }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+
+  .warden-container {
+    padding: 1.5rem;
+  }
+
+  .card {
+    padding: 1.4rem;
   }
 }

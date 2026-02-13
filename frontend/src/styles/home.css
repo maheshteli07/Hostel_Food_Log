@@ -1,12 +1,11 @@
 /* ========== PAGE CONTAINER ========== */
 .home-container {
   min-height: 100vh;
-  width: 100%;
-  background-color: #f5f9ff; /* Light govt white-blue */
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 /* ========== MAIN CONTENT (COLUMN LAYOUT) ========== */
 .content-wrapper {

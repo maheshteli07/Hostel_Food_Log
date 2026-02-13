@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import Background from "../components/background";
 import "../styles/Login.css";
 
 function Login() {
   return (
+    <Background>
     <div className="login-page">
       <div className="login-container">
         <h2>Student Login</h2>
@@ -19,6 +21,7 @@ function Login() {
         </p>
       </div>
     </div>
+    </Background>
   );
 }
 

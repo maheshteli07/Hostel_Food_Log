@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Background from "../components/background";
 import "../styles/StudentDashboard.css";
 
 function StudentDashboard() {
@@ -24,6 +25,7 @@ function StudentDashboard() {
   }, []);
 
   return (
+    <Background>
     <div className="dashboard-page">
       <div className="dashboard-container">
         <h2>Today's Menu</h2>
@@ -53,6 +55,7 @@ function StudentDashboard() {
         )}
       </div>
     </div>
+    </Background>
   );
 }
 

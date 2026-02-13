@@ -1,10 +1,12 @@
 import { useNavigate } from "react-router-dom";
+import Background from "../components/background";
 import "../styles/home.css";
 
 function Home() {
   const navigate = useNavigate();
 
   return (
+    <Background>
     <div className="home-container">
       <div className="content-wrapper">
         <h1 className="home-title">Hostel Food Management System</h1>
@@ -30,6 +32,7 @@ function Home() {
         </div>
       </div>
     </div>
+    </Background>
   );
 }
 

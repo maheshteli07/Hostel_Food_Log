@@ -1,7 +1,9 @@
 import "../styles/Register.css";
+import Background from "../components/background";
 
 function Register() {
   return (
+    <Background> 
     <div className="register-page">
       <div className="register-container">
         <h2>Student Registration</h2>
@@ -15,6 +17,7 @@ function Register() {
         </form>
       </div>
     </div>
+    </Background>
   );
 }
 

@@ -1,0 +1,194 @@
+/* ========== PAGE ========== */
+.warden-container {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f1f5fb 0%, #ffffff 100%);
+  padding: 2rem;
+  animation: pageFade 0.4s ease-in-out;
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== TITLE ========== */
+.warden-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #0f2a44;
+  margin-bottom: 2rem;
+  animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== CARD ========== */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  padding: 1.6rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px rgba(15, 42, 68, 0.08);
+  animation: fadeUp 0.5s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== SECTION TITLE ========== */
+.section-title {
+  font-size: 1.4rem;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+/* ========== REQUEST ROW ========== */
+.request-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.2s ease;
+}
+
+.request-row:hover {
+  background-color: #f8fafc;
+}
+
+.request-row:last-child {
+  border-bottom: none;
+}
+
+.student-name {
+  font-weight: 600;
+  color: #0f2a44;
+}
+
+.student-email {
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+/* ========== ACTION BUTTONS ========== */
+.action-buttons {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.approve-btn {
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  padding: 7px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.delete-btn {
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  padding: 7px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.approve-btn:hover {
+  background-color: #1e3a8a;
+  transform: translateY(-1px);
+}
+
+.delete-btn:hover {
+  background-color: #b91c1c;
+  transform: translateY(-1px);
+}
+
+/* ========== EMPTY TEXT ========== */
+.empty-text {
+  color: #64748b;
+  font-style: italic;
+}
+
+/* ========== FOOD COUNT ========== */
+.count-box {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  gap: 1rem;
+}
+
+.count-item {
+  padding: 1.2rem;
+  border-radius: 10px;
+  width: 110px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.count-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.count-number {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.count-label {
+  font-size: 0.9rem;
+}
+
+/* Color Coding */
+.veg {
+  background-color: #ecfdf5;
+  color: #166534;
+}
+
+.nonveg {
+  background-color: #fef2f2;
+  color: #991b1b;
+}
+
+.total {
+  background-color: #eff6ff;
+  color: #1e3a8a;
+}
+
+/* ========== MOBILE ========== */
+@media (max-width: 600px) {
+  .count-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .count-item {
+    width: 100%;
+  }
+}

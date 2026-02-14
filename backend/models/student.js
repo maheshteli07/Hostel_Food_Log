@@ -12,5 +12,10 @@ const studentSchema=new Schema({
     sspId:{
         type:String,
         required:true
+    },
+    mobileNo:{
+        type:String,
+        required:true 
     }
 })
+module.exports=mongoose.model('Student',studentSchema)

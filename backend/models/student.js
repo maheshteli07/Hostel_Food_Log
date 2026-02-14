@@ -16,6 +16,16 @@ const studentSchema=new Schema({
     mobileNo:{
         type:String,
         required:true 
+    },
+    snackType:{
+        type:String,
+        required:true,
+        default:'Egg'
+    },
+    hostelNo:{
+        type:String,
+        required:true
     }
 })
-module.exports=mongoose.model('Student',studentSchema)
+const student= mongoose.model('Student',studentSchema);
+module.exports=student;

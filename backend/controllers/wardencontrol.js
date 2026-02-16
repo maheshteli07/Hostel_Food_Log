@@ -78,3 +78,4 @@ const updateMenu=async(req,res)=>{
     }
         
 }
+module.exports={registerWarden,wardenLogin,updateMenu}
